@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Header from './Header.jsx';
 import './App.css';
-
+import photoko from './assets/profile-picture.png';
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -38,7 +38,7 @@ function App() {
           </div>
 
           <div className="flex h-100">
-            <img className="transition-all filter drop-shadow-lg dark:hover:drop-shadow-[0_0_10px_#22d3ee] dark:drop-shadow-[0_0_3px_#67e8f9] duration-500" src="src/assets/profile-picture.png" alt="Profile" />
+            <img className="transition-all filter drop-shadow-lg dark:hover:drop-shadow-[0_0_10px_#22d3ee] dark:drop-shadow-[0_0_3px_#67e8f9] duration-500" src={photoko} alt="Profile" />
           </div>
         </div>
 
